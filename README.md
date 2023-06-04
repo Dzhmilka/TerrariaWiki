@@ -1,6 +1,6 @@
 # Terraria Wiki
 
-An application for viewing information and description about items from the Terraria in ukrainian. 
+An application for viewing information and description about items from the Terraria in ukrainian.  
 It contains functions such:
 
 - Searching item from all items by the name;

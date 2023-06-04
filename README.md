@@ -1,16 +1,8 @@
 # terraria_wiki
 
-Diploma work.
+An application for viewing information and description about items from the Terraria.
+It contains functions such:
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Searching item from all items by the name;
+- Adding items to favorite list for reviewing them later;
+- Opening item's wikipedia page from item screen.

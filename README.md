@@ -1,4 +1,4 @@
-# terraria_wiki
+# Terraria Wiki
 
 An application for viewing information and description about items from the Terraria.
 It contains functions such:

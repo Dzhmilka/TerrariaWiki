@@ -2656,11 +2656,9 @@ ItemData getItem(String? itemName) {
             )
         );
       }
-      if (item.description != null) {
-        readyWidgets.add(
-          item.description!
-        );
-      }
+      readyWidgets.add(
+        item.description
+      );
       return ItemData(widgets: readyWidgets, tool: tool);
     }
   }

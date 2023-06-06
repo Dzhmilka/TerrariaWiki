@@ -3,7 +3,6 @@ import 'package:terraria_wiki/InfoLists/favorite_list.dart';
 import 'package:terraria_wiki/Variables/app_colors.dart';
 import 'package:terraria_wiki/Screens/item_screen.dart';
 import 'package:terraria_wiki/InfoLists/favorite_buttons.dart';
-import 'package:terraria_wiki/Screens/search_screen.dart';
 
 class FavoriteScreen extends StatefulWidget {
   const FavoriteScreen({Key? key}) : super(key: key);
@@ -13,7 +12,6 @@ class FavoriteScreen extends StatefulWidget {
 }
 
 class _FavoriteScreenState extends State<FavoriteScreen> {
-  final TextEditingController _searchController = TextEditingController();
   FavoritesManager favoritesManager = FavoritesManager();
   List<FavoriteButtons> favoriteButtons = [];
 

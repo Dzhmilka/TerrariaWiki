@@ -2259,7 +2259,7 @@ List<AllItems> allItems = [
       style: TextStyle(color: AppColors.textColor),
     ),
     knockback: const Text(
-      '8 (дуже сильний)',
+      '8 (дуже сильне)',
       style: TextStyle(color: AppColors.textColor),
     ),
     bonus: const Text(

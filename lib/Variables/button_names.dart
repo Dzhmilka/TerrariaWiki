@@ -16,6 +16,7 @@ class ButtonNames {
   static const String tinPickaxeText = 'Олов\'яна кирка';
   static const String ironPickaxeText = 'Залізна кирка';
   static const String leadPickaxeText = 'Свинцева кирка';
+  static const String silverPickaxeText = 'Срібна кирка';
   static const String titaniumDrillText = 'Титанове свердло';
 
   //Сокири та бензопили

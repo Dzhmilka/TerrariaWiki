@@ -9,6 +9,7 @@ class WikiLinks {
   static const String tinPickaxeLink = 'https://terraria.wiki.gg/wiki/Tin_Pickaxe';
   static const String ironPickaxeLink = 'https://terraria.wiki.gg/wiki/Iron_Pickaxe';
   static const String leadPickaxeLink = 'https://terraria.wiki.gg/wiki/Lead_Pickaxe';
+  static const String silverPickaxeLink = 'https://terraria.wiki.gg/wiki/Silver_Pickaxe';
   static const String titaniumDrillLink = 'https://terraria.wiki.gg/wiki/Titanium_Drill';
 
   static const String copperAxeLink = 'https://terraria.wiki.gg/wiki/Copper_Axe';

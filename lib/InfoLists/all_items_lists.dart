@@ -687,6 +687,137 @@ List<AllItems> allItems = [
     ),
   ),
   AllItems(
+    icon: Image.asset(ImageNames.silverPickaxe, scale: 0.8),
+    itemName: const Text(
+      ButtonNames.silverPickaxeText,
+      style: TextStyle(
+          color: AppColors.textColor,
+          fontSize: 20,
+          fontWeight: FontWeight.bold
+      ),
+    ),
+    itemLink: IconButton(
+      icon: const Icon(wikiIcon, size: 28),
+      onPressed: () {
+        final Uri wiki = Uri.parse(WikiLinks.silverPickaxeLink);
+        launchUrl(wiki);
+      },
+    ),
+    pickaxeStrength: Row(
+      children: [
+        Image.asset(
+          ImageNames.pickaxeStrengthImage,
+          scale: 1.3,
+        ),
+        const SizedBox(width: 8),
+        const Text(
+          '45%',
+          style: TextStyle(
+            color: AppColors.textColor,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+    hammerStrength: Row(
+      children: [
+        Image.asset(
+          ImageNames.hammerStrengthImage,
+          scale: 1.3,
+        ),
+        const SizedBox(width: 8),
+        const Text(
+          '0%',
+          style: TextStyle(
+            color: AppColors.textColor,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+    axeStrength: Row(
+      children: [
+        Image.asset(
+          ImageNames.axeStrengthImage,
+          scale: 1.3,
+        ),
+        const SizedBox(width: 8),
+        const Text(
+          '0%',
+          style: TextStyle(
+            color: AppColors.textColor,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+    damage: const Text(
+      '6 (ближній бій)',
+      style: TextStyle(color: AppColors.textColor),
+    ),
+    knockback: const Text(
+      '2 (дуже слабке)',
+      style: TextStyle(color: AppColors.textColor),
+    ),
+    criticalChance: const Text(
+      '4%',
+      style: TextStyle(color: AppColors.textColor),
+    ),
+    useTime: const Text(
+      '19 (дуже швидкий)',
+      style: TextStyle(color: AppColors.textColor),
+    ),
+    toolSpeed: const Text(
+      '11',
+      style: TextStyle(color: AppColors.textColor),
+    ),
+    rarity: Stack(
+      children: [
+        Text(
+          'Біла',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            foreground: Paint()
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = 2
+              ..color = Colors.black,
+          ),
+        ),
+        const Text(
+          'Біла',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+    sell: Row(
+      children: [
+        const Text(
+          '10',
+          style: TextStyle(color: AppColors.textColor),
+        ),
+        const SizedBox(width: 4,),
+        Image.asset(ImageNames.silverCoin),
+      ],
+    ),
+    research: const Text(
+      '1 одиниця',
+      style: TextStyle(
+        color: AppColors.researchTextColor,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    description: const Text(
+      ItemDescriptions.silverPickaxeDescription,
+      overflow: TextOverflow.ellipsis,
+      maxLines: 1000,
+      style: TextStyle(color: AppColors.textColor),
+      textAlign: TextAlign.justify,
+    ),
+  ),
+  AllItems(
     icon: Image.asset(ImageNames.titaniumDrill, scale: 0.8,),
     itemName: const Text(
       ButtonNames.titaniumDrillText,

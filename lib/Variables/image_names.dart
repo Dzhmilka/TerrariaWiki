@@ -12,6 +12,7 @@ class ImageNames {
   static const String copperPickaxe = 'images/cooper pickaxe.png';
   static const String tinPickaxe = 'images/tin pickaxe.png';
   static const String leadPickaxe = 'images/lead pickaxe.png';
+  static const String silverPickaxe = 'images/silver pickaxe.png';
   static const String titaniumDrill = 'images/titanium drill.png';
 
   //Сокири та бензопили

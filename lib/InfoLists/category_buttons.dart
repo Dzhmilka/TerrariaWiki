@@ -49,6 +49,13 @@ List<CategoryButtons> getItemsData(int mainIndex, int categoryIndex) {
             )
           )
         ),
+        CategoryButtons(icon: Image.asset(ImageNames.silverPickaxe,), buttonText: const Text(
+            ButtonNames.silverPickaxeText,
+            style: TextStyle(
+              color: AppColors.textColor,
+            )
+        )
+        ),
         CategoryButtons(icon: Image.asset(ImageNames.titaniumDrill,), buttonText: const Text(
             ButtonNames.titaniumDrillText,
             style: TextStyle(

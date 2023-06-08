@@ -6,3 +6,5 @@ An application for viewing information and description about items from the Terr
 - Searching item from all items by the name;
 - Adding items to favorite list for reviewing them later;
 - Opening item's wikipedia page from item screen.
+
+New items are still being added :)

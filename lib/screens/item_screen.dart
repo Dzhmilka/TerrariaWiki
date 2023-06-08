@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/InfoLists/all_items_lists.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/InfoLists/favorite_list.dart';
+import 'package:terraria_wiki/info_lists/all_items_lists.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/info_lists/favorite_list.dart';
 
 class ItemScreen extends StatefulWidget {
   final String? itemName;

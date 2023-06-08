@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/Screens/search_screen.dart';
-import 'package:terraria_wiki/Variables/wiki_links.dart';
+import 'package:terraria_wiki/screens/search_screen.dart';
+import 'package:terraria_wiki/variables/wiki_links.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/InfoLists/secondary_buttons.dart';
-import 'package:terraria_wiki/Screens/category_screen.dart';
-import 'package:terraria_wiki/Screens/favorite_screen.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/info_lists/secondary_buttons.dart';
+import 'package:terraria_wiki/screens/category_screen.dart';
+import 'package:terraria_wiki/screens/favorite_screen.dart';
 
 class SecondScreen extends StatefulWidget {
   final int mainIndex;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/InfoLists/all_items_lists.dart';
-import 'package:terraria_wiki/InfoLists/all_items_class.dart';
+import 'package:terraria_wiki/info_lists/all_items_lists.dart';
+import 'package:terraria_wiki/info_lists/all_items_class.dart';
 
 class SearchButtons {
   final Image icon;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/InfoLists/favorite_list.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/Screens/item_screen.dart';
-import 'package:terraria_wiki/InfoLists/favorite_buttons.dart';
+import 'package:terraria_wiki/info_lists/favorite_list.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/screens/item_screen.dart';
+import 'package:terraria_wiki/info_lists/favorite_buttons.dart';
 
 class FavoriteScreen extends StatefulWidget {
   const FavoriteScreen({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/InfoLists/main_buttons.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/info_lists/main_buttons.dart';
 import 'Screens/main_screen.dart';
 
 void main() {

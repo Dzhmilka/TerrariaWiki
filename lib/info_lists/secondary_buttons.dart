@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/Variables/image_names.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/Variables/button_names.dart';
+import 'package:terraria_wiki/variables/image_names.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/variables/button_names.dart';
 
 class SecondaryButtons {
   final Image icon1;

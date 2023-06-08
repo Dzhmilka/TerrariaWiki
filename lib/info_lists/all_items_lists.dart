@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/InfoLists/all_items_class.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/Variables/image_names.dart';
-import 'package:terraria_wiki/Variables/button_names.dart';
-import 'package:terraria_wiki/Variables/item_descriptions.dart';
-import 'package:terraria_wiki/Variables/wiki_links.dart';
+import 'package:terraria_wiki/info_lists/all_items_class.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/variables/image_names.dart';
+import 'package:terraria_wiki/variables/button_names.dart';
+import 'package:terraria_wiki/variables/item_descriptions.dart';
+import 'package:terraria_wiki/variables/wiki_links.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 const IconData wikiIcon = Icons.public;

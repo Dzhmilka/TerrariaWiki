@@ -1,32 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/Screens/search_screen.dart';
+import 'package:terraria_wiki/screens/favorite_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/InfoLists/category_buttons.dart';
-import 'package:terraria_wiki/Variables/wiki_links.dart';
-import 'package:terraria_wiki/Screens/item_screen.dart';
-import 'package:terraria_wiki/Screens/favorite_screen.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/info_lists/main_buttons.dart';
+import 'package:terraria_wiki/screens/second_screen.dart';
+import 'package:terraria_wiki/variables/wiki_links.dart';
+import 'package:terraria_wiki/screens/search_screen.dart';
 
-class CategoryScreen extends StatefulWidget {
-  final int mainIndex;
-  final int categoryIndex;
-  const CategoryScreen({Key? key, required this.mainIndex, required this.categoryIndex}) : super(key: key);
+class MainScreen extends StatefulWidget {
+  final List<MainButtons> infoList;
+  const MainScreen({Key? key, required this.infoList}) : super(key: key);
 
   @override
-  State<CategoryScreen> createState() => _CategoryScreenState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _CategoryScreenState extends State<CategoryScreen> {
+class _MainScreenState extends State<MainScreen> {
+  String searchText = '';
   final TextEditingController _searchController = TextEditingController();
-  List<CategoryButtons> itemList = [];
-  String headText = '';
 
-  @override
-  void initState() {
-    super.initState();
-    itemList = getItemsData(widget.mainIndex, widget.categoryIndex);
-    headText = getHeaderCategory(widget.mainIndex, widget.categoryIndex);
-  }
+  List<MainButtons> get infoList => widget.infoList;
 
   @override
   Widget build(BuildContext context) {
@@ -48,35 +41,35 @@ class _CategoryScreenState extends State<CategoryScreen> {
                       );
                     },
                     decoration: InputDecoration(
-                      labelText: 'Пошук',
-                      labelStyle: const TextStyle(
-                        color: AppColors.primaryColor,
-                      ),
-                      prefixIcon: const Icon(Icons.search, color: AppColors.primaryColor,),
-                      border: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        labelText: 'Пошук',
+                        labelStyle: const TextStyle(
                           color: AppColors.primaryColor,
                         ),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      focusedBorder: const OutlineInputBorder (
-                        borderSide: BorderSide(
-                          color: AppColors.primaryColor,
+                        prefixIcon: const Icon(Icons.search, color: AppColors.primaryColor,),
+                        border: OutlineInputBorder(
+                          borderSide: const BorderSide(
+                            color: AppColors.primaryColor,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                      )
+                        focusedBorder: const OutlineInputBorder (
+                          borderSide: BorderSide(
+                            color: AppColors.primaryColor,
+                          ),
+                        )
+                    ),
                   ),
-                ),
                 ),
                 const SizedBox(width: 8),
                 IconButton(
-                  icon: const Icon(Icons.public, size: 28),
+                  icon: const Icon(Icons.public, size: 28,),
                   onPressed: () {
-                    final Uri wiki = Uri.parse(getLink(widget.mainIndex));
+                    final Uri wiki = Uri.parse(WikiLinks.mainLink);
                     launchUrl(wiki);
                   },
                 ),
                 IconButton(
-                  icon: const Icon(Icons.bookmark_rounded, size: 28),
+                  icon: const Icon(Icons.bookmark_rounded, size: 28,),
                   onPressed: () {
                     Navigator.of(context).push(
                         MaterialPageRoute(builder: (BuildContext context) => const FavoriteScreen())
@@ -86,21 +79,21 @@ class _CategoryScreenState extends State<CategoryScreen> {
               ],
             ),
           ),
-          Center(
+          const Center(
             child: Text(
-              headText,
-              style: const TextStyle(
+              'Головна',
+              style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
           const SizedBox(height: 16),
-          Expanded(
-            child: ListView.builder(
+          ListView.builder(
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+              physics: const ScrollPhysics(parent: null),
               shrinkWrap: true,
-              itemCount: itemList.length,
+              itemCount: infoList.length,
               itemBuilder: (context, index) {
                 return Container(
                   margin: const EdgeInsets.only(bottom: 12),
@@ -131,9 +124,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
                     onPressed: () {
                       Navigator.of(context).push(
                           MaterialPageRoute(builder: (BuildContext context) {
-                            return ItemScreen(itemName: itemList[index].buttonText.data);
+                            return SecondScreen(mainIndex: index);
                           }
-                        )
+                          )
                       );
                     },
                     child: Row(
@@ -141,19 +134,18 @@ class _CategoryScreenState extends State<CategoryScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                             flex: 1,
-                            child: itemList[index].icon
+                            child: infoList[index].icon1
                         ),
                         const SizedBox(width: 8),
                         Expanded(
                             flex: 9,
-                            child: itemList[index].buttonText
+                            child: infoList[index].buttonText
                         ),
                       ],
                     ),
                   ),
                 );
               }
-            ),
           ),
         ],
       ),

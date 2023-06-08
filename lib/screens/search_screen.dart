@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:terraria_wiki/Variables/app_colors.dart';
-import 'package:terraria_wiki/Screens/item_screen.dart';
-import 'package:terraria_wiki/InfoLists/search_buttons.dart';
-import 'package:terraria_wiki/Screens/favorite_screen.dart';
+import 'package:terraria_wiki/variables/app_colors.dart';
+import 'package:terraria_wiki/screens/item_screen.dart';
+import 'package:terraria_wiki/info_lists/search_buttons.dart';
+import 'package:terraria_wiki/screens/favorite_screen.dart';
 
 class SearchScreen extends StatefulWidget {
   final String searchText;
